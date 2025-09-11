@@ -1,5 +1,3 @@
-
-
 .header{
     width: 100%;
     height: 82px;
@@ -10,13 +8,46 @@
     border-bottom: solid 1px #D9FFF5;
 
     &__navigation{
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 14px;
         padding-left: 16px;
         padding-right: 16px;
+        width: 100%;
+        max-width: 1120px; // optional: ограничение максимальной ширины
+
+        // Левая группа
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: flex-start;
+            flex: 1;
+        }
+
+        // Правая группа
+        &-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        &--logo{
+            width: 96px;
+            height: 50px;
+            // Центрируем логотип
+            margin: 0 auto;
+            
+            @media (min-width: 768px) {
+                margin: 0; // на десктопе убираем авто-маргины
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
 
         &--link{
             background-color: #FF3E79;
@@ -27,6 +58,16 @@
             justify-content: center;
             align-items: center;
 
+            &-burger{
+                background-color: #FF3E79;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             &-hidden{
                 background-color: #FF3E79;
                 width: 40px;
@@ -36,17 +77,10 @@
                 justify-content: center;
                 align-items: center;
 
-                @media (min-width: 768px) {
+                @media (min-width: 568px) {
                     display: flex;
                 }
-                
-
             }
-        }
-
-        &--logo{
-        width: 96px;
-        height: 50px;
         }
 
         &--divlider{
@@ -54,25 +88,45 @@
             height: 32px;
             background-color: #EAEAEA;
             border-radius: 4px;
-            
 
             &-action{
                 width: 2px;
                 height: 32px;
                 background-color: #EAEAEA;
                 border-radius: 4px;
-                display: none;
-                
                 
                 @media (min-width: 768px) {
-                    display: block;
-                    
+                    display: none;
                 }
 
+                &-left{
+                    width: 2px;
+                    height: 32px;
+                    background-color: #EAEAEA;
+                    border-radius: 4px;
+                    display: none;
+                    
+                    
+                    
+                    @media (min-width: 568px) {
+                    display: block;
+                    }
+                }
+            }
+        }
+
+        // Адаптив для мобильных
+        @media (max-width: 767px) {
+            justify-content: space-between;
+            
+            &-left,
+            &-right {
+                flex: 0 0 auto;
+            }
+            
+            &--logo {
+                margin: 0 10px;
             }
         }
     }
-
-    
-
 }
