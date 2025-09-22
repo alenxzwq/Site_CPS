@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     width: 100%;
     height: 82px;
     background-color: #fff;
@@ -15,18 +16,18 @@
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
-        max-width: 1120px; // optional: ограничение максимальной ширины
+        max-width: 1120px; 
 
-        // Левая группа
+        
         &-left {
             display: flex;
             align-items: center;
             gap: 14px;
             justify-content: flex-start;
-            flex: 1;
+            
         }
 
-        // Правая группа
+        
         &-right {
             display: flex;
             align-items: center;
@@ -38,11 +39,11 @@
         &--logo{
             width: 96px;
             height: 50px;
-            // Центрируем логотип
+            
             margin: 0 auto;
             
-            @media (min-width: 768px) {
-                margin: 0; // на десктопе убираем авто-маргины
+            @media (min-width: 950px) {
+                margin: 0; 
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
@@ -95,7 +96,7 @@
                 background-color: #EAEAEA;
                 border-radius: 4px;
                 
-                @media (min-width: 768px) {
+                @media (min-width: 950px) {
                     display: none;
                 }
 
@@ -115,7 +116,7 @@
             }
         }
 
-        // Адаптив для мобильных
+        
         @media (max-width: 767px) {
             justify-content: space-between;
             
@@ -129,4 +130,9 @@
             }
         }
     }
+
+    @media(min-width: 950px){
+        display: none;
+    }
 }
+
