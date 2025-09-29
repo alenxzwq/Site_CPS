@@ -3,14 +3,17 @@
     src: url('/TTLakesCondensed-Regular.ttf');
 }
 
-
+.app{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .main{
     font-family: 'TTLakes';
     background-color: #F8F8F8;
     width: 100%;
     height: 500px;
-    
+  
 
     
     &__services{
@@ -34,8 +37,48 @@
                 margin-left:   12px;
                 font-weight: bold;
             }
+
+            
             
         }
+
+        &--desktop_group{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-left: auto;
+            margin-right: 30px;
+
+            &--container{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                
+
+                &-desktop_icon{
+                background-color: #FF3E79;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                &-desktop_text{
+                    padding-right: 8px;
+                }
+
+            }
+
+             
+
+        }
+
+        
+
+       
 
         &--slide_menu{
             display: flex;

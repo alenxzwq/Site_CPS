@@ -43,11 +43,28 @@
         </div>
       </ul>
     </header>
-    <main class="main">
+    <div class="app">
+      <main class="main">
       <section class="main__services">
         <div class="main__services--group">
           <div class="main__services--group-highlight"></div>
           <h1 class="main__services--group-title">Услуги и сервисы</h1>
+          
+          <div class="main__services--desktop_group">
+            <div class="main__services--desktop_group--container">
+              <p class="main__services--desktop_group--container-desktop_text">Оставить заявку</p>
+              <div class="main__services--desktop_group--container-desktop_icon">
+                <img  src="./src/images/icons/tools.svg">
+              </div>
+            </div>
+          
+            <div class="main__services--desktop_group--container">
+              <p class="main__services--desktop_group--container-desktop_text">Статус ремонта</p>
+              <div class="main__services--desktop_group--container-desktop_icon">
+                <img  src="./src/images/icons/search.svg">
+              </div>
+            </div>
+          </div>
 
         </div>
         
@@ -85,18 +102,38 @@
       </section>
     </main>
 
-    <aside>
-      <nav>
-        <img src="/src/images/icons/logo.svg">
-        <img src="/src/images/icons/search.svg">
-        <ul>
-          <li>Ремонт техники</li>
-          <li>Услуги и сервисы</li>
-          <li>Корпоративным клиентам</li>
-          <li>Продавцам техники</li>
-          <li>Партнерам</li>
+    <aside class="side_menu">
+      <nav class="side_menu__navigation">
+        <img class="side_menu__navigation-logo" src="/src/images/icons/logo.svg">
+        <div class="side_menu__navigation--icon-search"><img src="./src/images/icons/search_side_menu.svg"></div>
+        
+        <ul class="side_menu__navigation-list">
+          <li class="side_menu__navigation-list--li-active"><a href="#!">Ремонт техники</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Услуги и сервисы</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Корпоративным клиентам</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Продавцам техники</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Партнерам</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Производителям</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Наши сервисные центры</a></li>
+          <li class="side_menu__navigation-list--li"><a href="#!">Контакты</a></li>
         </ul>
+        <div class="side_menu__navigation-group_icon">
+          <div class="side_menu__navigation--icon"><img src="/src/images/icons/phone.svg"></div>
+          <div class="side_menu__navigation--icon"><img src="/src/images/icons/message.svg"></div>
+          <div class="side_menu__navigation--icon"><img src="/src/images/icons/contacts.svg"></div>
+          
+        </div>
+        <div class="side_menu__navigation-contacts">
+          <p>mail@cps.com</p>
+          <h2>8 800 890 8900</h2>
+          <div class="side_menu__navigation-languages">
+            <p class="side_menu__navigation-languages-active">RU</p>
+            <p>EN</p>
+            <p>CH</p>
+          </div>
+        </div>
       </nav>
     </aside>
-  </body>
+    </div>
+  </body> 
 </html>
