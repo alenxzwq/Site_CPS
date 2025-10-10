@@ -5,6 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/src/styles/normalize.css" />
     <link rel="stylesheet" href="/src/global.scss" />
   </head>
@@ -120,68 +125,109 @@
           </div>
         </section>
 
-        <section class="main__brands">
-          <header class="main__brands--header_slider">
-            <h2 class="main__brands--header_slider-title">
+        <section class="main__sliders">
+          <header class="main__sliders--header_slider">
+            <h2 class="main__sliders--header_slider-title">
               РEМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
             </h2>
           </header>
 
-          <div class="swiper main__brands--slider">
-            <div class="swiper-wrapper main__brands--slider-wrapper">
-              <div class="swiper-slide main__brands--slider-wrapper-slide">
+          <div class="swiper main__sliders--slider">
+            <div class="swiper-wrapper main__sliders--slider-wrapper">
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
                 <img src="/src/images/logo_slider/Lenovo.svg" />
                 <img src="/src/images/icons/arrow.svg" />
               </div>
-              <div class="swiper-slide main__brands--slider-wrapper-slide">
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
                 <img src="/src/images/logo_slider/Samsung.svg" />
                 <img src="/src/images/icons/arrow.svg" />
               </div>
-              <div class="swiper-slide main__brands--slider-wrapper-slide">
-                <img src="/src/images/logo_slider/Lenovo.svg" />
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Apple.svg" />
                 <img src="/src/images/icons/arrow.svg" />
               </div>
-
-              <div class="swiper-pagination"></div>
-
-              <div class="swiper-scrollbar"></div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/ViewSonic.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/BOSH.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/HP.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Acer.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
             </div>
+            <div class="swiper-pagination swiper-wrapper"></div>
           </div>
         </section>
 
-        <section class="main__brands">
-          <header class="main__brands--header_slider">
-            <h2 class="main__brands--header_slider-title">
+        <section class="main__sliders">
+          <header class="main__sliders--header_slider">
+            <h2 class="main__sliders--header_slider-title">
               РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ
             </h2>
           </header>
 
-          <div class="swiper main__brands--slider">
-            <div class="swiper-wrapper main__brands--slider-wrapper">
+          <div class="swiper main__sliders--slider">
+            <div class="swiper-wrapper main__sliders--slider-wrapper">
               <div
-                class="swiper-slide main__brands--slider-wrapper-slide"
+                class="swiper-slide main__sliders--slider-wrapper-slide"
                 data-slide-type="types"
               >
                 <p>Ремонт ноутбуков</p>
                 <img src="/src/images/icons/arrow.svg" />
               </div>
 
-              <div class="swiper-pagination"></div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт планшетов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
 
-              <div class="swiper-scrollbar"></div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт ПК</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт мониторов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
             </div>
+            <div
+              class="swiper-pagination swiper-wrapper"
+              data-pagination-type="second"
+            ></div>
           </div>
         </section>
 
-        <section class="main__brands">
-          <header class="main__brands--header_slider">
-            <h2 class="main__brands--header_slider-title">ЦЕНЫ НА УСЛУГИ</h2>
+        <section class="main__sliders">
+          <header class="main__sliders--header_slider">
+            <h2 class="main__sliders--header_slider-title">ЦЕНЫ НА УСЛУГИ</h2>
           </header>
 
-          <div class="swiper main__brands--slider">
-            <div class="swiper-wrapper main__brands--slider-wrapper">
+          <div class="swiper main__sliders--slider">
+            <div class="swiper-wrapper main__sliders--slider-wrapper">
               <div
-                class="swiper-slide main__brands--slider-wrapper-slide"
+                class="swiper-slide main__sliders--slider-wrapper-slide"
                 data-slide-type="price"
               >
                 <div class="flexbox">
@@ -195,6 +241,31 @@
                   </div>
                   <div>
                     <p class="grey medium">Срок</p>
+                    <p>30 мин</p>
+                  </div>
+                </div>
+
+                <button class="button-slide">
+                  <span>ЗАКАЗАТЬ </span>
+                  <img src="/src/images/icons/arrow_dropdown.svg" />
+                </button>
+              </div>
+
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="price"
+              >
+                <div class="flexbox">
+                  <div>
+                    <p class="grey medium">Ремонтные услуги</p>
+                    <p>Замена дисплея</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Цена</p>
+                    <p>1 000 ₽</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Срок</p>
                     <p>30-120 мин</p>
                   </div>
                 </div>
@@ -205,9 +276,102 @@
                 </button>
               </div>
 
-              <div class="swiper-pagination"></div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="price"
+              >
+                <div class="flexbox">
+                  <div>
+                    <p class="grey medium">Ремонтные услуги</p>
+                    <p>Замена полифонического динамика</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Цена</p>
+                    <p>1 000 ₽</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Срок</p>
+                    <p>30-120 мин</p>
+                  </div>
+                </div>
 
-              <div class="swiper-scrollbar"></div>
+                <button class="button-slide">
+                  <span>ЗАКАЗАТЬ </span>
+                  <img src="/src/images/icons/arrow_dropdown.svg" />
+                </button>
+              </div>
+
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="price"
+              >
+                <div class="flexbox">
+                  <div>
+                    <p class="grey medium">Ремонтные услуги</p>
+                    <p>Тестирование с выдачей технического заключения</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Цена</p>
+                    <p>1 000 ₽</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Срок</p>
+                    <p>30-120 мин</p>
+                  </div>
+                </div>
+
+                <button class="button-slide">
+                  <span>ЗАКАЗАТЬ </span>
+                  <img src="/src/images/icons/arrow_dropdown.svg" />
+                </button>
+              </div>
+
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="price"
+              >
+                <div class="flexbox">
+                  <div>
+                    <p class="grey medium">Ремонтные услуги</p>
+                    <p>Замена программного обеспечения</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Цена</p>
+                    <p>1 000 ₽</p>
+                  </div>
+                  <div>
+                    <p class="grey medium">Срок</p>
+                    <p>30-120 мин</p>
+                  </div>
+                </div>
+
+                <button class="button-slide">
+                  <span>ЗАКАЗАТЬ </span>
+                  <img src="/src/images/icons/arrow_dropdown.svg" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination swiper-wrapper"
+              data-pagination-type="three"
+            ></div>
+          </div>
+        </section>
+
+        <section class="main__offer">
+          <div class="main__offer--container">
+            <p>
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
+            </p>
+
+            <div class="main__offer--container-commercial_offer">
+              <p>Получить коммерческое предложение</p>
+              <img
+                class="main__offer--container-commercial_offer-icon"
+                src="/src/images/icons/arrow_dropdown_pink.svg"
+              />
             </div>
           </div>
         </section>
@@ -273,5 +437,19 @@
         </nav>
       </aside>
     </div>
+
+    <footer class="footer">
+      <p>
+        © 2019 CPS <br />
+        Разработано командой Apesong
+      </p>
+      <p>Политика конфиденциальности</p>
+      <p>
+        Информация, размещенная на данной странице, не является публичной
+        офертой
+      </p>
+    </footer>
   </body>
+  <script src="./src/JS/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>

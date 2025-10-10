@@ -149,14 +149,17 @@
     }
   }
 
-  &__brands {
+  &__sliders {
     width: 100%;
 
     &--header_slider {
       margin-top: 24px;
       width: 100%;
       padding: 16px;
-      background-color: rgba(248, 248, 248, 1);
+      /* gradient */
+
+      background: linear-gradient(360deg, #f8f8f8 0%, #ffffff 98.61%);
+
       border-top: 1px solid rgba(217, 255, 245, 1);
 
       &-title {
@@ -169,8 +172,9 @@
 
     &--slider {
       display: flex;
-      width: 100%;
+      padding-bottom: 50px;
       margin-left: 16px;
+      margin-top: 16px;
 
       overflow-x: auto;
       overflow-y: hidden;
@@ -180,14 +184,12 @@
       }
 
       &-wrapper {
-        display: flex;
-
-        gap: 24px;
+        display: flex !important;
 
         &-slide {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: space-between !important;
           width: 240px;
           height: 70px;
           background-color: rgba(255, 255, 255, 1);
@@ -212,6 +214,7 @@
           }
 
           &[data-slide-type='price'] {
+            position: relative;
             display: flex;
             width: 280px;
             height: 200px;
@@ -238,13 +241,16 @@
             }
 
             .button-slide {
+              position: absolute;
+              right: 16px;
+              bottom: 12px;
               align-self: flex-end;
               display: flex;
               justify-content: space-between;
-              width: 120px;
-              height: 32px;
+              width: 115px;
+              padding: 10px;
               background-color: rgba(255, 62, 121, 1);
-              border-radius: 16px;
+              border-radius: 18px;
             }
 
             span {
@@ -254,6 +260,8 @@
             }
           }
         }
+
+        /* Изменить цвет всех точек */
       }
 
       &-wrapper-slide img {
@@ -265,4 +273,70 @@
       }
     }
   }
+
+  &__offer {
+    margin-top: 44px;
+
+    &--container {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+
+      &-commercial_offer {
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 40px;
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px; /* Новая ширина */
+  height: 12px; /* Новая высота */
+  background-color: rgba(221, 221, 221, 1);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: rgba(181, 182, 188, 1);
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+/* Для первого слайдера */
+.swiper-pagination:not([data-pagination-type]) {
+  bottom: -90px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+
+/* Для второго слайдера */
+.swiper-pagination[data-pagination-type='second'] {
+  bottom: -190px !important; /* Другое положение */
+  left: 35% !important; /* Сдвиг влево */
+  transform: none !important;
+  width: auto !important;
+}
+
+.swiper-pagination[data-pagination-type='three'] {
+  bottom: -220px !important; /* Другое положение */
+  left: 35% !important; /* Сдвиг влево */
+  transform: none !important;
+  width: auto !important;
 }
