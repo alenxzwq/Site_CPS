@@ -152,6 +152,18 @@
   &__sliders {
     width: 100%;
 
+    @media (min-width: 768px) {
+      margin-top: 32px;
+    }
+
+    @media (min-width: 950px) {
+      margin-top: 120px;
+    }
+
+    @media (min-width: 1083px) {
+      margin-top: 160px;
+    }
+
     &--header_slider {
       margin-top: 24px;
       width: 100%;
@@ -270,6 +282,42 @@
         height: auto;
         width: auto;
         object-fit: contain;
+      }
+
+      @media (min-width: 768px) {
+        .swiper {
+          overflow: visible !important;
+        }
+
+        .swiper-wrapper {
+          transform: none !important;
+          display: grid !important;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+          max-height: 190px;
+          overflow: hidden;
+
+          transition: max-height 1s ease;
+        }
+
+        .main__sliders--slider-wrapper.expanded {
+          max-height: 500px !important; /* Убираем ограничение при раскрытии */
+        }
+
+        .swiper-slide {
+          width: auto !important;
+          height: auto !important;
+
+          &[data-slide-type='price'] {
+            display: none !important;
+          }
+        }
+
+        .swiper-pagination,
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none !important;
+        }
       }
     }
   }

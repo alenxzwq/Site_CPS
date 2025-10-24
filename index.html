@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="/src/styles/normalize.css" />
     <link rel="stylesheet" href="/src/global.scss" />
   </head>
@@ -125,7 +126,7 @@
           </div>
         </section>
 
-        <section class="main__sliders">
+        <section class="main__sliders" data-section="brands">
           <header class="main__sliders--header_slider">
             <h2 class="main__sliders--header_slider-title">
               РEМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
@@ -133,7 +134,10 @@
           </header>
 
           <div class="swiper main__sliders--slider">
-            <div class="swiper-wrapper main__sliders--slider-wrapper">
+            <div
+              class="swiper-wrapper main__sliders--slider-wrapper"
+              data-wrapper="brands"
+            >
               <div class="swiper-slide main__sliders--slider-wrapper-slide">
                 <img src="/src/images/logo_slider/Lenovo.svg" />
                 <img src="/src/images/icons/arrow.svg" />
@@ -166,12 +170,34 @@
                 <img src="/src/images/logo_slider/Sony.svg" />
                 <img src="/src/images/icons/arrow.svg" />
               </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
             </div>
             <div class="swiper-pagination swiper-wrapper"></div>
           </div>
+
+          <div
+            class="main__services--block_information--read_more"
+            data-toggle="brands"
+          >
+            <img src="/src/images/icons/expand.svg" />
+            <p class="main__services--block_information--read_more_text">
+              Читать далее
+            </p>
+          </div>
         </section>
 
-        <section class="main__sliders">
+        <section class="main__sliders" data-section="types">
           <header class="main__sliders--header_slider">
             <h2 class="main__sliders--header_slider-title">
               РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ
@@ -179,7 +205,10 @@
           </header>
 
           <div class="swiper main__sliders--slider">
-            <div class="swiper-wrapper main__sliders--slider-wrapper">
+            <div
+              class="swiper-wrapper main__sliders--slider-wrapper"
+              data-wrapper="types"
+            >
               <div
                 class="swiper-slide main__sliders--slider-wrapper-slide"
                 data-slide-type="types"
@@ -216,6 +245,16 @@
               class="swiper-pagination swiper-wrapper"
               data-pagination-type="second"
             ></div>
+          </div>
+
+          <div
+            class="main__services--block_information--read_more"
+            data-toggle="types"
+          >
+            <img src="/src/images/icons/expand.svg" />
+            <p class="main__services--block_information--read_more_text">
+              Читать далее
+            </p>
           </div>
         </section>
 
@@ -358,6 +397,51 @@
           </div>
         </section>
 
+        <section class="main__table">
+          <table>
+            <thead>
+              <tr>
+                <th>Ремонтные услуги</th>
+                <th>Цена</th>
+                <th>Срок</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Диагностика</td>
+                <td>Бесплатно</td>
+                <td>30 мин</td>
+                <td><button>ЗАКАЗАТЬ</button></td>
+              </tr>
+              <tr>
+                <td>Замена дисплея</td>
+                <td>1 000 ₽</td>
+                <td>30-120 мин</td>
+                <td><button>ЗАКАЗАТЬ</button></td>
+              </tr>
+              <tr>
+                <td>Замена полифонического динамика</td>
+                <td>1 000 ₽</td>
+                <td>30-120 мин</td>
+                <td><button>ЗАКАЗАТЬ</button></td>
+              </tr>
+              <tr>
+                <td>Тестирование с выдачей технического заключения</td>
+                <td>1 000 ₽</td>
+                <td>30-120 мин</td>
+                <td><button>ЗАКАЗАТЬ</button></td>
+              </tr>
+              <tr>
+                <td>Замена программного обеспечения</td>
+                <td>1 000 ₽</td>
+                <td>30-120 мин</td>
+                <td><button>ЗАКАЗАТЬ</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
         <section class="main__offer">
           <div class="main__offer--container">
             <p>
@@ -451,5 +535,6 @@
     </footer>
   </body>
   <script src="./src/JS/swiper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./src/JS/showAll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </html>
