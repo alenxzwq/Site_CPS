@@ -25,7 +25,7 @@
   display: none;
 
   &__navigation {
-    position: relative;
+    position: fixed;
 
     &-logo {
       padding: 30px 20px;
@@ -33,12 +33,17 @@
 
     &--icon {
       background-color: #ff3e79;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       border-radius: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        width: 17px;
+        height: 17px;
+      }
 
       &-search {
         position: absolute;
@@ -71,12 +76,14 @@
       display: flex;
       gap: 16px;
       padding-left: 20px;
-      padding-top: 240px;
+      padding-top: 30px;
     }
 
     &-contacts {
       padding-left: 20px;
-      padding-top: 16px;
+      padding-top: 10px;
+
+      font-size: 12px;
     }
 
     &-languages {
@@ -89,7 +96,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1370px) and (max-width: 2000px) {
     display: block;
   }
 }

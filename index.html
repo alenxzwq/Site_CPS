@@ -113,7 +113,10 @@
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера
             </p>
-            <div class="main__services--block_information--read_more">
+            <div
+              class="main__services--block_information--read_more"
+              data-visible="always"
+            >
               <img src="/src/images/icons/expand.svg" />
               <p class="main__services--block_information--read_more_text">
                 Читать далее
@@ -182,6 +185,22 @@
                 <img src="/src/images/logo_slider/Sony.svg" />
                 <img src="/src/images/icons/arrow.svg" />
               </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div class="swiper-slide main__sliders--slider-wrapper-slide">
+                <img src="/src/images/logo_slider/Sony.svg" />
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
             </div>
             <div class="swiper-pagination swiper-wrapper"></div>
           </div>
@@ -189,6 +208,7 @@
           <div
             class="main__services--block_information--read_more"
             data-toggle="brands"
+            data-visible="desktop"
           >
             <img src="/src/images/icons/expand.svg" />
             <p class="main__services--block_information--read_more_text">
@@ -240,6 +260,34 @@
                 <p>Ремонт мониторов</p>
                 <img src="/src/images/icons/arrow.svg" />
               </div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт мониторов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт мониторов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт мониторов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
+              <div
+                class="swiper-slide main__sliders--slider-wrapper-slide"
+                data-slide-type="types"
+              >
+                <p>Ремонт мониторов</p>
+                <img src="/src/images/icons/arrow.svg" />
+              </div>
             </div>
             <div
               class="swiper-pagination swiper-wrapper"
@@ -250,6 +298,7 @@
           <div
             class="main__services--block_information--read_more"
             data-toggle="types"
+            data-visible="desktop"
           >
             <img src="/src/images/icons/expand.svg" />
             <p class="main__services--block_information--read_more_text">
@@ -258,7 +307,7 @@
           </div>
         </section>
 
-        <section class="main__sliders">
+        <section class="main__sliders" data-section="price">
           <header class="main__sliders--header_slider">
             <h2 class="main__sliders--header_slider-title">ЦЕНЫ НА УСЛУГИ</h2>
           </header>
@@ -284,7 +333,7 @@
                   </div>
                 </div>
 
-                <button class="button-slide">
+                <button class="button-design button-position">
                   <span>ЗАКАЗАТЬ </span>
                   <img src="/src/images/icons/arrow_dropdown.svg" />
                 </button>
@@ -309,7 +358,7 @@
                   </div>
                 </div>
 
-                <button class="button-slide">
+                <button class="button-design button-position">
                   <span>ЗАКАЗАТЬ </span>
                   <img src="/src/images/icons/arrow_dropdown.svg" />
                 </button>
@@ -334,7 +383,7 @@
                   </div>
                 </div>
 
-                <button class="button-slide">
+                <button class="button-design button-position">
                   <span>ЗАКАЗАТЬ </span>
                   <img src="/src/images/icons/arrow_dropdown.svg" />
                 </button>
@@ -359,7 +408,7 @@
                   </div>
                 </div>
 
-                <button class="button-slide">
+                <button class="button-design button-position">
                   <span>ЗАКАЗАТЬ </span>
                   <img src="/src/images/icons/arrow_dropdown.svg" />
                 </button>
@@ -398,7 +447,7 @@
         </section>
 
         <section class="main__table">
-          <table>
+          <table class="main__table-head">
             <thead>
               <tr>
                 <th>Ремонтные услуги</th>
@@ -407,39 +456,76 @@
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Диагностика</td>
-                <td>Бесплатно</td>
-                <td>30 мин</td>
-                <td><button>ЗАКАЗАТЬ</button></td>
-              </tr>
-              <tr>
-                <td>Замена дисплея</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td><button>ЗАКАЗАТЬ</button></td>
-              </tr>
-              <tr>
-                <td>Замена полифонического динамика</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td><button>ЗАКАЗАТЬ</button></td>
-              </tr>
-              <tr>
-                <td>Тестирование с выдачей технического заключения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td><button>ЗАКАЗАТЬ</button></td>
-              </tr>
-              <tr>
-                <td>Замена программного обеспечения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td><button>ЗАКАЗАТЬ</button></td>
-              </tr>
-            </tbody>
           </table>
+          <div class="main__table-wrapper">
+            <div class="main__table-body">
+              <table class="main__table-content">
+                <tbody>
+                  <tr>
+                    <td class="main__table--serviceName">Диагностика</td>
+                    <td class="main__table--free">Бесплатно</td>
+                    <td class="main__table--duration">30 мин</td>
+                    <td>
+                      <button class="button-design main__table--buttonTable">
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="/src/images/icons/arrow_dropdown.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="main__table--serviceName">Замена дисплея</td>
+                    <td class="main__table--price">1 000 ₽</td>
+                    <td class="main__table--duration">30-120 мин</td>
+                    <td>
+                      <button class="button-design">
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="/src/images/icons/arrow_dropdown.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="main__table--serviceName">
+                      Замена полифонического динамика
+                    </td>
+                    <td class="main__table--price">1 000 ₽</td>
+                    <td class="main__table--duration">30-120 мин</td>
+                    <td>
+                      <button class="button-design">
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="/src/images/icons/arrow_dropdown.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="main__table--serviceName">
+                      Тестирование с выдачей технического заключения
+                    </td>
+                    <td class="main__table--price">1 000 ₽</td>
+                    <td class="main__table--duration">30-120 мин</td>
+                    <td>
+                      <button class="button-design">
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="/src/images/icons/arrow_dropdown.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="main__table--serviceName">
+                      Замена программного обеспечения
+                    </td>
+                    <td class="main__table--price">1 000 ₽</td>
+                    <td class="main__table--duration">30-120 мин</td>
+                    <td>
+                      <button class="button-design">
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="/src/images/icons/arrow_dropdown.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </section>
 
         <section class="main__offer">
@@ -449,16 +535,27 @@
               единичную услугу. Для получения коммерческого предложения на
               постоянное обслуживание, оставьте заявку.
             </p>
-
-            <div class="main__offer--container-commercial_offer">
-              <p>Получить коммерческое предложение</p>
-              <img
-                class="main__offer--container-commercial_offer-icon"
-                src="/src/images/icons/arrow_dropdown_pink.svg"
-              />
-            </div>
+          </div>
+          <div class="main__offer--commercial_offer">
+            <p>Получить коммерческое предложение</p>
+            <img
+              class="main__offer--container-commercial_offer-icon"
+              src="/src/images/icons/arrow_dropdown_pink.svg"
+            />
           </div>
         </section>
+
+        <footer class="footer">
+          <p>
+            © 2019 CPS <br />
+            Разработано командой Apesong
+          </p>
+          <p>Политика конфиденциальности</p>
+          <p>
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </p>
+        </footer>
       </main>
 
       <aside class="side_menu">
@@ -512,27 +609,14 @@
             <p>mail@cps.com</p>
             <h2>8 800 890 8900</h2>
             <div class="side_menu__navigation-languages">
-              <p class="side_menu__navigation-languages active">RU</p>
-              <p>EN</p>
-              <p>CH</p>
-              <p></p>
+              <button class="side_menu__navigation-languages active">RU</button>
+              <button>EN</button>
+              <button>CH</button>
             </div>
           </div>
         </nav>
       </aside>
     </div>
-
-    <footer class="footer">
-      <p>
-        © 2019 CPS <br />
-        Разработано командой Apesong
-      </p>
-      <p>Политика конфиденциальности</p>
-      <p>
-        Информация, размещенная на данной странице, не является публичной
-        офертой
-      </p>
-    </footer>
   </body>
   <script src="./src/JS/swiper.js"></script>
   <script src="./src/JS/showAll.js"></script>

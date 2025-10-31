@@ -39,7 +39,7 @@
 
       margin: 0 auto;
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1370px) {
         margin: 0;
         position: absolute;
         left: 50%;
@@ -93,7 +93,7 @@
         background-color: #eaeaea;
         border-radius: 4px;
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1370px) {
           display: none;
         }
 
@@ -125,7 +125,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1370px) {
     display: none;
   }
 }
