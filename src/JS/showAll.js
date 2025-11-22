@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  /*-----------------------btn-showAll----------------------- */
   const showAllBtns = document.querySelectorAll(
     '.main__services--block_information--read_more'
   );
@@ -31,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /*------------------------------------------------------- */
+
+  /*-----------------------Mobile_side_menu----------------------- */
+
   const main = document.querySelector('.main');
 
   function toggleMobileMenu() {
@@ -55,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
     .querySelector('.side_menuMobile__navigation--icon-cross')
     .addEventListener('click', toggleMobileMenu);
 
-  document.querySelector('.main').addEventListener('click', toggleMobileMenu);
-
   document.addEventListener('keydown', function (event) {
     if (
       event.key === 'Escape' &&
@@ -64,5 +67,43 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       toggleMobileMenu();
     }
+  });
+
+  document.querySelector('.main').addEventListener('click', function (event) {
+    const isMenuOpen = document
+      .querySelector('.side_menuMobile')
+      .classList.contains('open');
+
+    const isBurgerClick = event.target.closest(
+      '.header__navigation--link-burger'
+    );
+
+    if (isMenuOpen && !isBurgerClick) {
+      toggleMobileMenu();
+    }
+  });
+
+  /*------------------------------------------------------------------- */
+
+  /*----------------------------Slide_menu----------------------------- */
+
+  const slideMenu = document.querySelector('.main__services--slide_menu');
+  const buttons = slideMenu.querySelectorAll(
+    '.main__services--slide_menu-button'
+  );
+
+  buttons[0]?.classList.add('main__services--slide_menu-button-active');
+
+  slideMenu.addEventListener('click', function (event) {
+    const clickeBtn = event.target.closest(
+      '.main__services--slide_menu-button'
+    );
+
+    if (!clickeBtn) return;
+
+    buttons.forEach((btn) =>
+      btn.classList.remove('main__services--slide_menu-button-active')
+    );
+    clickeBtn.classList.add('main__services--slide_menu-button-active');
   });
 });
