@@ -36,53 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /*-----------------------Mobile_side_menu----------------------- */
 
-  const main = document.querySelector('.main');
-
-  function toggleMobileMenu() {
-    if (window.innerWidth >= 1369) {
-      return;
-    }
-
-    const mobileMenu = document.querySelector('.side_menuMobile');
-
-    const header = document.querySelector('.header');
-
-    mobileMenu.classList.toggle('open');
-    main.classList.toggle('menu-overlay');
-    header.classList.toggle('menu-overlay');
-  }
-
-  document
-    .querySelector('.header__navigation--link-burger')
-    .addEventListener('click', toggleMobileMenu);
-
-  document
-    .querySelector('.side_menuMobile__navigation--icon-cross')
-    .addEventListener('click', toggleMobileMenu);
-
-  document.addEventListener('keydown', function (event) {
-    if (
-      event.key === 'Escape' &&
-      document.querySelector('.side_menuMobile').classList.contains('open')
-    ) {
-      toggleMobileMenu();
-    }
-  });
-
-  document.querySelector('.main').addEventListener('click', function (event) {
-    const isMenuOpen = document
-      .querySelector('.side_menuMobile')
-      .classList.contains('open');
-
-    const isBurgerClick = event.target.closest(
-      '.header__navigation--link-burger'
-    );
-
-    if (isMenuOpen && !isBurgerClick) {
-      toggleMobileMenu();
-    }
-  });
-
   /*------------------------------------------------------------------- */
 
   /*----------------------------Slide_menu----------------------------- */
