@@ -106,4 +106,33 @@ document.addEventListener('DOMContentLoaded', function () {
     );
     clickeBtn.classList.add('main__services--slide_menu-button-active');
   });
+
+  function toggleModalFeedback() {
+    if (window.innerWidth >= 1369) {
+      return;
+    }
+
+    const mobileMenuFeedback = document.querySelector('.modal_feedback_mobile');
+
+    mobileMenuFeedback.classList.toggle('open');
+  }
+
+  document
+    .getElementById('icon_tools')
+    .addEventListener('click', toggleModalFeedback);
+
+  document
+    .querySelector('.modal_feedback_mobile--icon-cross')
+    .addEventListener('click', toggleModalFeedback);
+
+  document.addEventListener('keydown', function (event) {
+    if (
+      event.key === 'Escape' &&
+      document
+        .querySelector('.modal_feedback_mobile')
+        .classList.contains('open')
+    ) {
+      toggleModalFeedback();
+    }
+  });
 });
