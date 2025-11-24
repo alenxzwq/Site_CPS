@@ -56,7 +56,10 @@
             <h1 class="main__services--group-title">Услуги и сервисы</h1>
 
             <div class="main__services--desktop_group">
-              <div class="main__services--desktop_group--container">
+              <div
+                class="main__services--desktop_group--container"
+                id="submitYourApplication"
+              >
                 <p
                   class="main__services--desktop_group--container-desktop_text"
                 >
@@ -690,10 +693,27 @@
         <div class="modal_feedback_mobile--line"></div>
         <h1>Обратная связь</h1>
         <form class="modal_feedback_mobile_form">
-          <input type="text" placeholder="Имя" />
-          <input type="text" placeholder="Телефон" />
-          <input type="email" placeholder="Электронная почта" />
-          <textarea id="letter" placeholder="Сообщение"></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя"
+            required
+            minlength="2"
+          />
+          <input type="text" name="phone" placeholder="Телефон" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Электронная почта"
+            required
+          />
+          <textarea
+            id="letter"
+            placeholder="Сообщение"
+            required
+            minlength="10"
+            name="message"
+          ></textarea>
         </form>
 
         <p>

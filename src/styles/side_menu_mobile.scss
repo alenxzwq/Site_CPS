@@ -23,7 +23,8 @@
 }
 
 .main.menu-overlay,
-.header.menu-overlay {
+.header.menu-overlay,
+.side_menu__navigation.menu-overlay {
   position: relative;
   opacity: 0.1;
   pointer-events: none;
@@ -39,7 +40,6 @@
   height: 100%;
   z-index: 1;
   pointer-events: auto;
-  cursor: pointer;
 }
 
 .side_menuMobile {
