@@ -598,7 +598,7 @@
             </li>
           </ul>
           <div class="side_menu__navigation-group_icon">
-            <div class="side_menu__navigation--icon">
+            <div class="side_menu__navigation--icon" id="phoneIcon">
               <img src="/src/images/icons/phone.svg" />
             </div>
             <div class="side_menu__navigation--icon">
@@ -662,7 +662,10 @@
             </li>
           </ul>
           <div class="side_menuMobile__navigation-group_icon">
-            <div class="side_menuMobile__navigation--icon">
+            <div
+              class="side_menuMobile__navigation--icon"
+              id="phoneIcon_mobile"
+            >
               <img src="/src/images/icons/phone.svg" />
             </div>
             <div class="side_menuMobile__navigation--icon">
@@ -700,6 +703,7 @@
             required
             minlength="2"
           />
+
           <input type="text" name="phone" placeholder="Телефон" required />
           <input
             type="email"
@@ -723,7 +727,38 @@
           <span style="color: #ff3e79">политикой конфиденциальности</span>
         </p>
 
-        <button type="submit" class="button-design button-position">
+        <button
+          type="submit"
+          class="button-design button-position"
+          id="submitBtn"
+        >
+          <span>Отправить</span>
+          <img src="/src/images/icons/arrow_dropdown.svg" />
+        </button>
+      </aside>
+
+      <aside class="modal_call">
+        <div class="modal_call--icon-cross">
+          <img src="/src/images/icons/close_cross.svg" />
+        </div>
+        <div class="modal_call--line"></div>
+        <h1>Обратная связь</h1>
+        <form class="modal_call_form">
+          <input type="text" name="phone" placeholder="Телефон" required />
+        </form>
+
+        <p>
+          Нажимая “отправить”, вы даете согласие на
+          <span style="color: #ff3e79">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span style="color: #ff3e79">политикой конфиденциальности</span>
+        </p>
+
+        <button
+          type="submit"
+          class="button-design button-position"
+          id="submitBtn_call"
+        >
           <span>Отправить</span>
           <img src="/src/images/icons/arrow_dropdown.svg" />
         </button>

@@ -3,12 +3,11 @@
   src: url('/TTLakesCondensed-Regular.ttf');
 }
 
-.modal_feedback_mobile.open {
+.modal_call.open {
   transform: translateY(0) !important;
 }
 
-.modal_feedback_mobile_form input.error,
-.modal_feedback_mobile_form textarea.error {
+.modal_call input.error {
   border-color: #ff0000 !important;
   background-color: #fff5f5;
 }
@@ -20,7 +19,7 @@
   font-family: 'TTLakes' !important;
 }
 
-.modal_feedback_mobile {
+.modal_call {
   font-family: 'TTLakes';
 
   transform: translateY(-110%);
@@ -58,8 +57,7 @@
     padding-top: 24px;
     margin-left: 16px;
 
-    input,
-    textarea {
+    input {
       padding: 12px;
       width: 288px;
       border-radius: 8px;
@@ -73,11 +71,6 @@
       @media (min-width: 767px) {
         width: 90%;
       }
-    }
-
-    #letter {
-      height: 118px;
-      resize: none;
     }
   }
 
