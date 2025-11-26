@@ -3,6 +3,45 @@
   src: url('/TTLakesCondensed-Regular.ttf');
 }
 
+.button-design {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  padding: 10px 12px;
+  background: #ff3e79;
+
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+    outline: 1px solid #ff3e79;
+
+    span {
+      color: #ff3e79;
+    }
+
+    img {
+      filter: brightness(0) saturate(100%) invert(26%) sepia(89%)
+        saturate(2084%) hue-rotate(325deg) brightness(98%) contrast(101%);
+    }
+  }
+
+  span {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
+
 .modal_feedback_mobile.open {
   transform: translateY(0) !important;
 }

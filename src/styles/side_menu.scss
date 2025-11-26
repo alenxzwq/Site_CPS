@@ -48,8 +48,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      border: 1px solid #ff3e79;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid #ff3e79;
+
+        img {
+          filter: brightness(0) saturate(100%) invert(26%) sepia(89%)
+            saturate(2084%) hue-rotate(325deg) brightness(98%) contrast(101%);
+        }
+      }
 
       img {
         width: 17px;
@@ -68,6 +79,17 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 1);
+          border: 1px solid #ff3e79;
+
+          img {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(89%)
+              saturate(2084%) hue-rotate(325deg) brightness(98%) contrast(101%);
+          }
+        }
       }
 
       &-close {
