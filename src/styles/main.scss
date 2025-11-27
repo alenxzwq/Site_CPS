@@ -115,16 +115,17 @@
     }
 
     &--block_information {
+      padding-bottom: 100px;
       @media (min-width: 768px) {
         position: relative;
         display: block;
       }
 
       &-text {
-        font-size: 14px;
-        padding: 16px;
+        font-size: 16px;
+        padding: 34px;
 
-        max-height: 165px;
+        max-height: 200px;
         transform: none !important;
         overflow: hidden;
 
@@ -135,7 +136,8 @@
 
       &--read_more {
         display: flex;
-        margin-left: 16px;
+        margin-left: 28px;
+        margin-top: 2%;
         font-weight: 500;
         cursor: pointer;
 
@@ -156,13 +158,13 @@
           position: absolute;
           right: 24px;
           top: 16px;
-          width: 360px;
-          height: 208px;
+          width: 441px;
+          height: 267px;
           padding-top: 0;
         }
 
         @media (min-width: 950px) {
-          width: 531px;
+          width: 481px;
           height: 307px;
         }
       }
@@ -177,18 +179,17 @@
     }
 
     @media (min-width: 950px) {
-      margin-top: 150px;
+      margin-top: 50px;
     }
 
     @media (min-width: 1083px) {
-      margin-top: 180px;
+      margin-top: 40px;
     }
 
     &--header_slider {
       margin-top: 24px;
       width: 100%;
       padding: 16px;
-      /* gradient */
 
       background: linear-gradient(360deg, #f8f8f8 0%, #ffffff 98.61%);
 
@@ -282,8 +283,6 @@
             }
           }
         }
-
-        /* Изменить цвет всех точек */
       }
 
       &-wrapper-slide img {
@@ -606,7 +605,6 @@
             background: #eaeaea;
           }
 
-          // Закругление нижних углов последней строки
           &:last-child {
             td:first-child {
               border-bottom-left-radius: 6px;

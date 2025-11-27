@@ -37,15 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
   /*-----------------------Mobile_side_menu----------------------- */
 
   const main = document.querySelector('.main');
+  const mobileMenu = document.querySelector('.side_menuMobile');
+  const header = document.querySelector('.header');
 
   function toggleMobileMenu() {
     if (window.innerWidth >= 1369) {
       return;
     }
-
-    const mobileMenu = document.querySelector('.side_menuMobile');
-
-    const header = document.querySelector('.header');
 
     mobileMenu.classList.toggle('open');
     main.classList.toggle('menu-overlay');
@@ -151,8 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuCall = document.querySelector('.modal_call');
 
     mobileMenuCall.classList.toggle('open');
-    main.classList.toggle('menu-overlay');
-    sideMenu.classList.toggle('menu-overlay');
+
+    mobileMenu.classList.remove('open');
+    main.classList.remove('menu-overlay');
+    sideMenu.classList.remove('menu-overlay');
+    header.classList.remove('menu-overlay');
   }
 
   document
@@ -327,5 +328,63 @@ document.addEventListener('DOMContentLoaded', function () {
       clearForm();
       clearAllErrors();
     }
+  });
+
+  const navItems = document.querySelectorAll('.side_menu__navigation-list--li');
+
+  navItems.forEach((item) => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      navItems.forEach((navItem) => {
+        navItem.classList.remove('active');
+      });
+
+      this.classList.add('active');
+    });
+  });
+
+  const languageButtons = document.querySelectorAll(
+    '.side_menu__navigation-languages button'
+  );
+
+  languageButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      languageButtons.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+
+      this.classList.add('active');
+    });
+  });
+
+  const navItemsMobile = document.querySelectorAll(
+    '.side_menuMobile__navigation-list--li'
+  );
+
+  navItemsMobile.forEach((item) => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      navItemsMobile.forEach((navItem) => {
+        navItem.classList.remove('active');
+      });
+
+      this.classList.add('active');
+    });
+  });
+
+  const languageButtonsMobile = document.querySelectorAll(
+    '.side_menuMobile__navigation-languages button'
+  );
+
+  languageButtonsMobile.forEach((button) => {
+    button.addEventListener('click', function () {
+      languageButtonsMobile.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+
+      this.classList.add('active');
+    });
   });
 });
