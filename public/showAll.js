@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isExpanded) {
           targetWrapper.classList.remove('expanded');
           textElement.textContent = 'Показать всё';
-          iconElement.src = '/src/images/icons/expand.svg';
+          iconElement.src = '/expand.svg';
         } else {
           targetWrapper.classList.add('expanded');
           textElement.textContent = 'Скрыть';
 
-          iconElement.src = '/src/images/icons/close.svg';
+          iconElement.src = '/close.svg';
         }
       }
     });
