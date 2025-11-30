@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
           targetWrapper.classList.add('expanded');
           textElement.textContent = 'Скрыть';
 
-          iconElement.src = 'src/images/icons/close.svg';
+          iconElement.src = '/src/images/icons/close.svg';
         }
       }
     });
